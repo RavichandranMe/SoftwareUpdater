@@ -1,6 +1,6 @@
 # Define the path to your PowerShell script
 $url = "https://raw.githubusercontent.com/RavichandranMe/SoftwareUpdater/main/Developers.ps1"
-$scriptPath = "C:\Users\RavichandranEttappar\Desktop\AutoUpdate\Git\SoftwareUpdater\DevelopersNew.ps1"
+$scriptPath = "C:\ProgramData\DevelopersNew.ps1"
 
 # Download the script
 Invoke-WebRequest -Uri $url -OutFile $scriptPath
