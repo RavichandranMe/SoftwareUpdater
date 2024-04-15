@@ -1,5 +1,6 @@
 # Define the path to your PowerShell script
-$scriptPath = "C:\Users\RavichandranEttappar\Desktop\AutoUpdate\New\Developers.ps1"  # Replace with your actual script path
+#$scriptPath = "C:\Users\RavichandranEttappar\Desktop\AutoUpdate\New\Developers.ps1"  # Replace with your actual script path
+$scriptPath = "https://github.com/RavichandranMe/SoftwareUpdater/blob/main/Developers.ps1"
 
 # Get the current hour
 $currentHour = (Get-Date).Hour
