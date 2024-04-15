@@ -39,24 +39,6 @@ foreach ($appName in $appNames) {
             $installCommand = "winget install --id $appName --silent"
             $installOutput = Invoke-Expression -Command $installCommand
             Write-Host $installOutput
-			 # Show notification for the upgrade
-            Add-Type -TypeDefinition @"
-                using System;
-                using System.Windows.Forms;
-
-                public class Notifier {
-                    public static void ShowNotification(string title, string message) {
-                        NotifyIcon notifyIcon = new NotifyIcon();
-                        notifyIcon.Visible = true;
-                        notifyIcon.Icon = SystemIcons.Information;
-                        notifyIcon.BalloonTipTitle = title;
-                        notifyIcon.BalloonTipText = message;
-                        notifyIcon.ShowBalloonTip(5000);
-                    }
-                }
-"@
-
-            [Notifier]::ShowNotification("Upgrade Notification", "$appName has been upgraded.")
         }
     }
     elseif ($upgradeApps -notcontains $appName) {
@@ -70,25 +52,6 @@ foreach ($appName in $appNames) {
             $installCommand = "winget install --id $appName --silent"
             $installOutput = Invoke-Expression -Command $installCommand
             Write-Host $installOutput
-			
-			# Show notification for the installation
-            Add-Type -TypeDefinition @"
-                using System;
-                using System.Windows.Forms;
-
-                public class Notifier {
-                    public static void ShowNotification(string title, string message) {
-                        NotifyIcon notifyIcon = new NotifyIcon();
-                        notifyIcon.Visible = true;
-                        notifyIcon.Icon = SystemIcons.Information;
-                        notifyIcon.BalloonTipTitle = title;
-                        notifyIcon.BalloonTipText = message;
-                        notifyIcon.ShowBalloonTip(5000);
-                    }
-                }
-"@
-
-            [Notifier]::ShowNotification("Installation Notification", "$appName has been installed.")
         }
     }
 }
