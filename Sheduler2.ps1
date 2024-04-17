@@ -1,5 +1,5 @@
 # Define the path to your PowerShell script
-$url = "https://raw.githubusercontent.com/RavichandranMe/SoftwareUpdater/main/Developers.ps1"
+$url = "https://raw.githubusercontent.com/RavichandranMe/SoftwareUpdater/main/DevelopersNoWindow.ps1"
 $scriptPath = "C:\ProgramData\DevelopersNew.ps1"
 $outputLogFile = "C:\ProgramData\DevelopersNew.log"  # Define the path to the log file
 
