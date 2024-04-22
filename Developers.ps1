@@ -15,10 +15,8 @@ $appNames = @(
     "Git.Git",
     "Notepad++.Notepad++",
     "Microsoft.VisualStudioCode",
-	"Microsoft.Office",
     "TortoiseGit.TortoiseGit", 
     "TortoiseSVN.TortoiseSVN",
-	"Microsoft.Teams.Classic",
 	"Microsoft.Teams",
 	"Microsoft.Edge",
 	"Microsoft Edge Update"
