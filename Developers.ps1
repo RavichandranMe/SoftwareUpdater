@@ -7,7 +7,7 @@ $upgradeApps = Invoke-Expression -Command $availableAppsCommand
 
 # Specify the list of application names you want to upgrade
 $appNames = @(
-    "Google.Chrome",
+    "Google.Chrome.EXE",
     "7zip.7zip",
     "Mozilla.Firefox",
     "Adobe.Acrobat.Reader.64-bit",
